@@ -1,0 +1,123 @@
+.bg-pattern{
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    position:fixed;
+}
+
+.bg-pattern.boplay{
+    background-image: url(/backgrounds/bo-play.png);
+
+}
+
+.pattern.cartographer{
+    background-image: url(/backgrounds/cartographer.png);
+}
+
+.pattern.carbon-fibre{
+    background-image:url(/backgrounds/carbon-fibre.png);
+}
+
+.text-pattern{
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 1;
+}
+
+.text-pattern.boplay{
+    background-image: url(/backgrounds/bo-play.png);
+}
+
+.bg-pattern.fabric{
+    background-image: url(/backgrounds/classy-fabric.png);
+
+}
+
+.separator{
+    height: 30vh;
+}
+
+.fs-title{
+    font-size:8rem !important;
+}
+
+.fs-subtitle{
+    font-size:5rem !important;
+}
+.rotate-5{
+rotate: 5deg;
+}
+
+.rotate-minus-5{
+    rotate:-5deg;
+}
+
+.shadow-text-comic{
+    text-shadow: 8px 8px black;
+    
+}
+.shadow-comic{
+    -webkit-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
+    -moz-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
+    box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
+}
+
+.shadow-comic-svg {
+    filter: drop-shadow(5px 5px 0px rgb(0, 0, 0));
+  }
+  
+
+.project-card{
+    height:22rem;
+}
+
+.project-card-image{
+    width: auto;
+    height:15rem;
+    object-fit: cover;
+    border-radius:100% 0% 100% 0% / 0% 43% 57% 100%  ;
+    animation: close-card-image 0.5s ease-in-out forwards;
+}
+
+.project-card-image:hover{
+    animation:open-card-image 0.5s 1 ease-in-out forwards;
+}
+
+@keyframes open-card-image{
+    50%{
+        border-radius: 100% 0% 100% 0% / 0% 84% 16% 100% ;
+    }
+
+    100%{
+        border-radius: 100% 0% 100% 0% / 0% 95% 5% 100% ;
+    }
+}
+
+@keyframes close-card-image{
+    0%{
+        border-radius: 100% 0% 100% 0% / 0% 95% 5% 100% ;
+       
+    }
+
+    50%{
+        border-radius: 100% 0% 100% 0% / 0% 84% 16% 100% ;
+    }
+
+    100%{
+        border-radius:100% 0% 100% 0% / 0% 43% 57% 100%  ;
+    }
+}
+
+
+.opacity-hover-100{
+    opacity:0.5;
+    transition: opacity 0.5s;
+}
+
+.opacity-hover-100:hover{
+    opacity: 1;
+}
+ .logo-img{
+    width:clamp(5em, 10vh, 12rem) !important;
+    height:clamp(5rem, 10vh, 12rem)  !important;
+ }

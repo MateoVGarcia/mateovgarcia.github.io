@@ -1,0 +1,66 @@
+body{
+    font-family: "Quicksand", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Backgrounds */
+.bg-graphite{
+    background-color: #2C2C2C;
+}
+
+.bg-cherry{
+    background-color: #F7374F;
+}
+
+.bg-berry{
+    background-color: #88304E;;
+}
+
+.bg-purple{
+    background-color: #522546;
+}
+
+/* Font colors */
+
+.fc-graphite{
+    color: #2C2C2C !important;
+}
+
+.fc-cherry{
+    color:#F7374F;
+}
+
+.fc-berry{
+    color:#88304E;
+}
+
+.fc-purple{
+    color: #522546;
+}
+
+.svg-graphite {
+    fill: #2C2C2C !important;
+}
+
+.svg-cherry {
+    fill: #F7374F !important;
+}
+
+.svg-berry {
+    fill: #88304E !important;
+}
+
+.svg-purple {
+    fill: #522546 !important;
+}
+
+
+/* Font */
+.title-font {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
