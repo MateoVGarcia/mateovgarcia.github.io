@@ -56,6 +56,13 @@ rotate: 5deg;
     text-shadow: 8px 8px black;
     
 }
+
+
+.shadow-text-comic-light{
+    text-shadow: 4px 4px black;
+    
+}
+
 .shadow-comic{
     -webkit-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
     -moz-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
