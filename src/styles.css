@@ -56,6 +56,9 @@ body{
     fill: #522546 !important;
 }
 
+.svg-light{
+    fill:whitesmoke !important;
+}
 
 /* Font */
 .title-font {

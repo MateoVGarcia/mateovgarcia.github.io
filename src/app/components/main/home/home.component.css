@@ -18,6 +18,10 @@
     background-image:url(/backgrounds/carbon-fibre.png);
 }
 
+.pattern.crissxcross{
+    background-image: url(/backgrounds/crissxcross.png);
+}
+
 .text-pattern{
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -64,7 +68,7 @@ rotate: 5deg;
 }
 
 .shadow-comic{
-    -webkit-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
+    -webkit-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0) !important;
     -moz-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
     box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
 }
@@ -116,6 +120,8 @@ rotate: 5deg;
 }
 
 
+
+
 .opacity-hover-100{
     opacity:0.5;
     transition: opacity 0.5s;
@@ -128,3 +134,47 @@ rotate: 5deg;
     width:clamp(5em, 10vh, 12rem) !important;
     height:clamp(5rem, 10vh, 12rem)  !important;
  }
+
+ /* From Uiverse.io by adamgiebl */ 
+.comic-button {
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+  }
+  
+  .comic-button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  .comic-button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+  .bounce-hover:hover{
+    animation:bounce-hover 0.3s 1 ease-in-out forwards;
+  }
+
+  @keyframes bounce-hover{
+    0%{
+        scale:1;
+    }
+
+    50%{
+        scale: 1.5;
+    }
+
+    75%{
+        scale:1.4;
+    }
+
+    100%{
+        scale:1.5;
+    }
+  }
