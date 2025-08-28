@@ -1,13 +1,44 @@
 <div class="col">
     <div class="bg-pattern fabric bg-purple"></div>
-    <br><br><br>
-    <div class="separator"></div>
-    <div class="col-12"></div>
-    <div class="d-flex flex-wrap justify-content-center col-12 text-center">
-    <p class="tag bg-cherry col-4 col-lg-1 fs-6 fs-md-1 col-md-2">Angular v19</p>
-    <p class="tag bg-info col-4 col-lg-1 fs-6 fs-md-1 col-md-2">GeneXus 18</p>
-    <p class="tag bg-success col-4 col-lg-1 fs-6 fs-md-1 col-md-2">HTML</p>
-    <p class="tag bg-primary col-4 col-lg-1 fs-6 fs-md-1 col-md-2">CSS</p>
-    <p class="tag bg-cherry col-4 col-lg-1 fs-6 fs-md-1 col-md-2">TypeScript</p>
-</div>
+    <div class=" py-5"></div>
+    <div class="col-12 d-flex justify-content-center mt-5 ">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img [src]="slides[currentIndex].src" [alt]="slides[currentIndex].title" class="carousel-image"
+                    loading="lazy" />
+            </div>
+
+            <button class="carousel-control prev" style="z-index:1001" (click)="prev()">&#10094;</button>
+            <button class="carousel-control next" style="z-index:1001" (click)="next()">&#10095;</button>
+
+            <div class="carousel-indicators">
+                <span *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex"
+                    (click)="currentIndex = i"></span>
+            </div>
+        </div>
+
+
     </div>
+    <div class="d-flex flex-wrap justify-content-center col-12 text-center mt-5 fw-bolder gap-2">
+        <p class="tag bg-cherry col-4 col-lg-1 fs-6 fs-md-1 col-md-2">Angular v19</p>
+        <p class="tag bg-info col-4 col-lg-1 fs-6 fs-md-1 col-md-2">GeneXus 18</p>
+        <p class="tag bg-success col-4 col-lg-1 fs-6 fs-md-1 col-md-2">HTML</p>
+        <p class="tag bg-primary col-4 col-lg-1 fs-6 fs-md-1 col-md-2">CSS</p>
+        <p class="tag bg-cherry col-4 col-lg-1 fs-6 fs-md-1 col-md-2">TypeScript</p>
+    </div>
+    <div class="d-flex text-center justify-content-center col-12 text-center ">
+        <a href="https://aguapotablejujuy.com" target="_blank"
+            class="comic-button bg-cherry align-bottom col-6 col-lg-2"
+            style="text-decoration: none; color:black;">DEMO</a>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div
+            class="bg-graphite text-center text-light px-3 py-5 col-10 col-lg-8 fs-2 fw-normal pattern cartographer shadow-comic">
+            <p class="shadow-text-comic-light">I worked as the Frontend Developer for the website aguapotablejujuy.com.<br>
+                I proposed the design concept using Figma, actively collaborated with the team by gathering feedback on
+                how the site should look, and implemented improvements throughout the development process. I was the
+                sole frontend developer on a team of five, ensuring the interface was visually appealing and
+                user-friendly.</p>
+        </div>
+    </div>
+</div>

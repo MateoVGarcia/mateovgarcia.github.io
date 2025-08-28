@@ -1,19 +1,23 @@
 import { Component} from '@angular/core';
 import { inject } from '@angular/core';
 import {Clipboard} from '@angular/cdk/clipboard';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
+  clipboard = inject(Clipboard);
+
 copyToClipboard="Copy to Clipboard"
 copyToClipboardCellphone="Copy to Clipboard"
 
-constructor(private clipboard:Clipboard){}
+constructor(){}
 
 copyMail(){
   this.clipboard.copy('mateovgarcia2003@gmail.com')

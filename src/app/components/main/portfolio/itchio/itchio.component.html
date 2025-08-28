@@ -1,1 +1,41 @@
-<p>itchio works!</p>
+<div class="col">
+    <div class="bg-pattern fabric bg-purple"></div>
+    <div class=" py-5"></div>
+    <div class="col-12 d-flex justify-content-center mt-5 ">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img [src]="slides[currentIndex].src" [alt]="slides[currentIndex].title" class="carousel-image"
+                    loading="lazy" />
+            </div>
+
+            <button class="carousel-control prev" style="z-index:1001" (click)="prev()">&#10094;</button>
+            <button class="carousel-control next" style="z-index:1001" (click)="next()">&#10095;</button>
+
+            <div class="carousel-indicators">
+                <span *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex"
+                    (click)="currentIndex = i"></span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="d-flex flex-wrap justify-content-center col-12 text-center mt-5 fw-bolder gap-2">
+        <p class="tag bg-cherry col-4 col-lg-1 fs-6 fs-md-1 col-md-2">Godot</p>
+        <p class="tag bg-info col-4 col-lg-1 fs-6 fs-md-1 col-md-2">LibreSprite</p>
+        <p class="tag bg-success col-4 col-lg-1 fs-6 fs-md-1 col-md-2">Blender</p>
+        <p class="tag bg-primary col-4 col-lg-1 fs-6 fs-md-1 col-md-2">Design</p>
+    </div>
+    <div class="d-flex text-center justify-content-center col-12 text-center ">
+        <a href="https://gluedog.itch.io" target="_blank" class="comic-button bg-cherry align-bottom col-6 col-lg-2"
+            style="text-decoration: none; color:black;">DEMO</a>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div
+            class="bg-graphite text-center text-light px-3 py-5 col-10 col-lg-8 fs-2 fw-normal pattern cartographer shadow-comic">
+            <p class="shadow-text-comic-light">I created 7 games published on my Itch.io page, all developed in Godot
+                for various Game Jams with timelines ranging from 3 days to 2 weeks. I handled every aspect of
+                development, including game design, graphics, environments, programming, sound effects, and in some
+                cases, original music.</p>
+        </div>
+    </div>
+</div>

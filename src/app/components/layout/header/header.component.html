@@ -1,22 +1,22 @@
 <nav class="navbar navbar-dark navbar-expand-lg border-bottom fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand bg-cherry fc-graphite rounded-pill py-3 px-4 text-center" href="#"><span class="title-font fs-3">Mateo García</span><br><span style="font-size:0.8rem">Portfolio</span></a>
+      <a class="navbar-brand bg-cherry fc-graphite rounded-pill py-3 px-4 text-center" [routerLink]="'/'"><span class="title-font fs-3">Mateo García</span></a>
       <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-light"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav fw-bolder">
           <li class="nav-item px-2">
-            <a class="nav-link active text-light fs-5" aria-current="page" href="#projects">Projects</a>
+            <a class="nav-link active text-light fs-5" aria-current="page" [routerLink]="'/home'" (click)="scrollTo('projects')" style="cursor:pointer">Projects</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link text-light fs-5" href="#tech">Technologies</a>
+            <a class="nav-link text-light fs-5" [routerLink]="'/home'" (click)="scrollTo('tech')" style="cursor:pointer">Technologies</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link text-light fs-5" href="#about">About</a>
+            <a class="nav-link text-light fs-5" [routerLink]="'/home'" (click)="scrollTo('about')" style="cursor:pointer">About</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link text-light fs-5" href="#contact">Contact</a>
+            <a class="nav-link text-light fs-5" [routerLink]="'/home'" (click)="scrollTo('contact')" style="cursor:pointer">Contact</a>
           </li>
         </ul>
       </div>

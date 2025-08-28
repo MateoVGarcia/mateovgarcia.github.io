@@ -60,6 +60,18 @@ body{
     fill:whitesmoke !important;
 }
 
+.svg-info{
+    fill:#0dcaf0 !important;
+}
+
+.svg-success{
+    fill:#20c997 !important;
+}
+
+.svg-warning{
+    fill:#ffc107 !important;
+}
+
 /* Font */
 .title-font {
     font-family: "Bebas Neue", sans-serif;
@@ -69,3 +81,245 @@ body{
   
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.bg-pattern{
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    position:fixed;
+}
+
+.bg-pattern.boplay{
+    background-image: url(/backgrounds/bo-play.png);
+
+}
+
+.pattern.cartographer{
+    background-image: url(/backgrounds/cartographer.png);
+}
+
+.pattern.carbon-fibre{
+    background-image:url(/backgrounds/carbon-fibre.png);
+}
+
+.pattern.crissxcross{
+    background-image: url(/backgrounds/crissxcross.png);
+}
+
+.text-pattern{
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 1;
+}
+
+.text-pattern.boplay{
+    background-image: url(/backgrounds/bo-play.png);
+}
+
+.bg-pattern.fabric{
+    background-image: url(/backgrounds/classy-fabric.png);
+
+}
+
+.separator{
+    height: 30vh;
+}
+
+.fs-title{
+    font-size:8rem !important;
+}
+
+.fs-subtitle{
+    font-size:5rem !important;
+}
+.rotate-5{
+rotate: 5deg;
+}
+
+.rotate-minus-5{
+    rotate:-5deg;
+}
+
+.shadow-text-comic{
+    text-shadow: 8px 8px black;
+    
+}
+
+
+.shadow-text-comic-light{
+    text-shadow: 4px 4px black;
+    
+}
+
+.shadow-comic{
+    -webkit-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0) !important;
+    -moz-box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
+    box-shadow: 10px 10px 0px 3px rgb(0, 0, 0);
+}
+
+.shadow-comic-svg {
+    filter: drop-shadow(5px 5px 0px rgb(0, 0, 0));
+  }
+  
+
+.project-card{
+    height:22rem;
+}
+
+.project-card-image{
+    width: auto;
+    height:15rem;
+    object-fit: cover;
+    border-radius:100% 0% 100% 0% / 0% 43% 57% 100%  ;
+    animation: close-card-image 0.5s ease-in-out forwards;
+}
+
+.project-card-image:hover{
+    animation:open-card-image 0.5s 1 ease-in-out forwards;
+}
+
+@keyframes open-card-image{
+    50%{
+        border-radius: 100% 0% 100% 0% / 0% 84% 16% 100% ;
+    }
+
+    100%{
+        border-radius: 100% 0% 100% 0% / 0% 95% 5% 100% ;
+    }
+}
+
+@keyframes close-card-image{
+    0%{
+        border-radius: 100% 0% 100% 0% / 0% 95% 5% 100% ;
+       
+    }
+
+    50%{
+        border-radius: 100% 0% 100% 0% / 0% 84% 16% 100% ;
+    }
+
+    100%{
+        border-radius:100% 0% 100% 0% / 0% 43% 57% 100%  ;
+    }
+}
+
+
+
+
+.opacity-hover-100{
+    opacity:0.5;
+    transition: opacity 0.5s;
+}
+
+.opacity-hover-100:hover{
+    opacity: 1;
+}
+ .logo-img{
+    width:clamp(5em, 10vh, 12rem) !important;
+    height:clamp(5rem, 10vh, 12rem)  !important;
+ }
+
+ /* From Uiverse.io by adamgiebl */ 
+.comic-button {
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+  }
+  
+  .comic-button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  .comic-button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+  .bounce-hover:hover{
+    animation:bounce-hover 0.3s 1 ease-in-out forwards;
+  }
+
+  @keyframes bounce-hover{
+    0%{
+        scale:1;
+    }
+
+    50%{
+        scale: 1.5;
+    }
+
+    75%{
+        scale:1.4;
+    }
+
+    100%{
+        scale:1.5;
+    }
+  }
+
+  .carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 50rem;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-slide {
+  width: 100%;
+  transition: transform 0.6s ease-in-out; /* Transición suave */
+}
+
+.carousel-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.562);
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+  border: none;
+  font-size: 2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+
+
+.carousel-control.prev {
+  left: 1px;
+}
+
+.carousel-control.next {
+  right: 1px;
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.carousel-indicators span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
